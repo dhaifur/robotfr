@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221005 09:29:57.831" rpa="false" schemaversion="3">
+<suite id="s1" name="Saku" source="D:\TestCase - TimHore\TestCase - TimHore\saku.robot">
+<test id="s1-t1" name="Buat Saku Bujet" line="20">
+<kw name="Open mulai">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>appium:platformVersion=12</arg>
+<arg>appium:deviceName=EYWCQS7H8LPBSOK7</arg>
+<arg>appium:newCommandTimeout=3600</arg>
+<arg>appium:nativeWebScreenshot=true</arg>
+<arg>appium:automationName=automationTest</arg>
+<arg>appium:ensureWebviewsHavePages=true</arg>
+<arg>appium:appActivity=id.co.bankraya.apps</arg>
+<arg>appium:appPackage=id.co.bankraya.apps.MainActivity</arg>
+<arg>appium:connectHardwareKeyboard=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20221005 09:29:58.050" endtime="20221005 09:30:15.236"/>
+</kw>
+<status status="PASS" starttime="20221005 09:29:58.049" endtime="20221005 09:30:15.236"/>
+</kw>
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>540</arg>
+<arg>2139</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20221005 09:30:15.239" level="INFO">Pressing at (540, 2139).</msg>
+<status status="PASS" starttime="20221005 09:30:15.237" endtime="20221005 09:30:16.133"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=(//android.widget.Button[@content-desc="Tambah Saku"])[1]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221005 09:30:16.133" endtime="20221005 09:30:17.156"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=(//android.widget.Button[@content-desc="Tambah Saku"])[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:17.158" level="INFO">Clicking element 'xpath=(//android.widget.Button[@content-desc="Tambah Saku"])[1]'.</msg>
+<status status="PASS" starttime="20221005 09:30:17.157" endtime="20221005 09:30:19.056"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Buat Saku Bujet"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221005 09:30:19.057" endtime="20221005 09:30:19.277"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Buat Saku Bujet"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:19.279" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Buat Saku Bujet"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:19.277" endtime="20221005 09:30:20.267"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView/android.widget.EditText[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:20.269" level="INFO">Clicking element 'xpath=//android.widget.ImageView/android.widget.EditText[1]'.</msg>
+<status status="PASS" starttime="20221005 09:30:20.268" endtime="20221005 09:30:20.478"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView/android.widget.EditText[1]</arg>
+<arg>Parkir</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:20.481" level="INFO">Typing text 'Parkir' into text field 'xpath=//android.widget.ImageView/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20221005 09:30:20.479" endtime="20221005 09:30:21.636"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView/android.widget.EditText[2]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:21.638" level="INFO">Clicking element 'xpath=//android.widget.ImageView/android.widget.EditText[2]'.</msg>
+<status status="PASS" starttime="20221005 09:30:21.637" endtime="20221005 09:30:23.020"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.ImageView/android.widget.EditText[2]</arg>
+<arg>2000</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:23.022" level="INFO">Typing text '2000' into text field 'xpath=//android.widget.ImageView/android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20221005 09:30:23.020" endtime="20221005 09:30:23.239"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@content-desc="Buat Saku Bujet"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:23.242" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Buat Saku Bujet"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:23.240" endtime="20221005 09:30:24.635"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="1"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20221005 09:30:24.637" endtime="20221005 09:30:24.889"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="5"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:24.893" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="5"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:24.890" endtime="20221005 09:30:25.058"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="4"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:25.060" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="4"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:25.059" endtime="20221005 09:30:25.158"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="3"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:25.160" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="3"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:25.159" endtime="20221005 09:30:25.275"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="4"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:25.279" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="4"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:25.276" endtime="20221005 09:30:25.358"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="6"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:25.360" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="6"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:25.358" endtime="20221005 09:30:25.439"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="2"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20221005 09:30:25.443" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="2"]'.</msg>
+<status status="PASS" starttime="20221005 09:30:25.440" endtime="20221005 09:30:25.523"/>
+</kw>
+<status status="PASS" starttime="20221005 09:29:58.049" endtime="20221005 09:30:25.524"/>
+</test>
+<status status="PASS" starttime="20221005 09:29:57.833" endtime="20221005 09:30:25.526"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Saku">Saku</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
